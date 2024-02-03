@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const URI = 'mongodb+srv://karin:syPlpBDbJoIUpGBU@cluster0.lwilyb2.mongodb.net/?retryWrites=true&w=majority'
+const URI = process.env.URI
 
 app.use(cors());
 app.use(express.json({ limit: '30mb' }));
